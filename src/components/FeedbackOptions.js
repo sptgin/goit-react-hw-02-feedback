@@ -3,13 +3,13 @@ import './FeedbackOptions.css';
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
-    <div className="Feedback__controls">
+    <div className="feedback__controls">
       {options.map(name => (
         <button
           type="button"
           name={name}
           onClick={onLeaveFeedback}
-          className="Feedback__button"
+          className="feedback__button"
         >
           {name}
         </button>
